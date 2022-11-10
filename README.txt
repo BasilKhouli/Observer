@@ -1,1 +1,1 @@
-bserver Mod 1.19 Forge
+Observer Mod 1.19 Forge
