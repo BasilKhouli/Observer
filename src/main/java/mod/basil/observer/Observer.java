@@ -51,6 +51,10 @@ public class Observer {
     @OnlyIn(Dist.CLIENT)
     public void onClientKeyMappingsRegistry(final RegisterKeyMappingsEvent event) {
         event.register(ObserverKeyBinds.KEY_RECORDING_START);
+        event.register(ObserverKeyBinds.KEY_RECORDING_STOP);
+        event.register(ObserverKeyBinds.KEY_RECORDING_PLAY);
+        event.register(ObserverKeyBinds.KEY_RECORDING_PAUSE);
+        event.register(ObserverKeyBinds.KEY_RECORDING_CLEAR);
     }
 
     @OnlyIn(Dist.CLIENT)
