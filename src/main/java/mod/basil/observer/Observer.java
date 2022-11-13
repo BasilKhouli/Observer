@@ -1,4 +1,16 @@
 package mod.basil.observer;
+
+import com.mojang.blaze3d.vertex.PoseStack;
+import mod.basil.observer.command.IClientCommand;
+import mod.basil.observer.command.RecordingCommand;
+import mod.basil.observer.event.BlockEvents;
+import mod.basil.observer.recorder.RecordingManager;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.client.event.ClientChatEvent;
+import net.minecraftforge.client.event.RegisterKeyMappingsEvent;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
