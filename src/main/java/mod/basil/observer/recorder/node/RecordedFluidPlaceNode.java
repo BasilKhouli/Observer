@@ -4,17 +4,17 @@
 //import net.minecraft.core.BlockPos;
 //import net.minecraft.world.level.Level;
 //import net.minecraft.world.level.block.Blocks;
+//import net.minecraft.world.level.block.state.BlockState;
 //import net.minecraft.world.level.material.FlowingFluid;
 //import net.minecraft.world.level.material.Fluid;
-//import net.minecraft.world.level.material.FluidState;
 //
 //public class RecordedFluidPlaceNode extends RecordedFluidNode {
-//    public RecordedFluidPlaceNode(final Level level, final int entityID, final BlockPos position, final Fluid fluid, final FluidState fluidState, final FlowingFluid flowingFluid) {
-//        super(level, entityID, position, fluid, fluidState, flowingFluid);
+//    public RecordedFluidPlaceNode(final Level level, final BlockPos position, final BlockPos liquidPos, final Fluid fluid, final BlockState blockState) {
+//        super(level, liquidPos, position, fluid, blockState);
 //    }
 //    @Override
 //    public void trigger(final Minecraft minecraft) {
-//        level.setBlockAndUpdate(position, fluidState.createLegacyBlock());
+//        level.setBlockAndUpdate(position, blockState);
 //    }
 //
 //    @Override
